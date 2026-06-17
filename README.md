@@ -30,21 +30,15 @@ CREATE TABLE Students (
 ```sql
 SELECT * FROM Students;
 ```
-## Query 1: Display All Student Records
-
+## Result 1: Display All Student Records
 ![Select All Queries](Select%20all%20queries.png)
-
 ### Explanation
 This query displays all records from the Students table.
 ### Explanation
-
 This query retrieves all records from the Students table.
-
 ---
 ## Query 2: Average Score in Each Subject
-
 ### SQL Query
-
 ```sql
 SELECT
 AVG(MathScore) AS Avg_Math,
@@ -52,13 +46,11 @@ AVG(ScienceScore) AS Avg_Science,
 AVG(EnglishScore) AS Avg_English
 FROM Students;
 ```
-
+## Result 2: Avg marks 
+![Average Score](avgscore.png)
 ### Explanation
-
 This query calculates the average marks obtained by students in Mathematics, Science, and English.
-
 ---
-
 ## Query 3: Find the Top Performer
 
 ### SQL Query
@@ -70,36 +62,25 @@ FROM Students
 ORDER BY TotalScore DESC
 LIMIT 1;
 ```
-
-
+## Result 3: Top performer
+![Top Performer](top%20performer.png)
 ### Explanation
-
 This query calculates total marks and displays the student with the highest score.
-
 ---
-
 ## Query 4: Count Students by Grade
-
 ### SQL Query
-
 ```sql
 SELECT Grade, COUNT(*) AS TotalStudents
 FROM Students
 GROUP BY Grade;
 ```
-
-
-
+## Result 4: Count student as grade
+![Grade Count](grade.png)
 ### Explanation
-
 This query groups students by grade and counts the number of students in each grade.
-
 ---
-
 ## Query 5: Average Score by Gender
-
 ### SQL Query
-
 ```sql
 SELECT Gender,
 AVG(MathScore) AS AvgMath,
@@ -108,32 +89,24 @@ AVG(EnglishScore) AS AvgEnglish
 FROM Students
 GROUP BY Gender;
 ```
+## Result 5:  Average Score by Gender
 
-
+![Gender Average](genderavg.png)
 ### Explanation
-
 This query calculates average subject scores separately for male and female students.
-
 ---
-
 ## Query 6: Students Scoring More Than 80 in Mathematics
-
 ### SQL Query
-
 ```sql
 SELECT *
 FROM Students
 WHERE MathScore > 80;
 ```
-
-
-
+## Result 6: Students Scoring More Than 80 in Mathematics
+![Math Above 80](mathabove80.png)
 ### Explanation
-
 This query displays students whose Mathematics score is greater than 80.
-
 ---
-
 ## Query 7: Update Student Grade
 
 ### SQL Query
@@ -151,14 +124,11 @@ SELECT *
 FROM Students
 WHERE StudentID = 3;
 ```
-
-
+## Result 7: Verify query
+![Update Result](update.png)
 ### Explanation
-
 This query updates the grade of a student and verifies the updated record.
-
 ---
-
 ## Conclusion
 
 A Student Management Database was successfully created using MySQL. SQL operations such as CREATE, INSERT, SELECT, UPDATE, AVG(), COUNT(), GROUP BY, ORDER BY, and WHERE were used to manage and analyze student data. This project demonstrates fundamental database management and data analysis skills required for SQL and Data Analytics roles.
