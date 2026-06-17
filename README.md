@@ -30,6 +30,12 @@ CREATE TABLE Students (
 ```sql
 SELECT * FROM Students;
 ```
+## Query 1: Display All Student Records
+
+![Select All Queries](Select%20all%20queries.png)
+
+### Explanation
+This query displays all records from the Students table.
 ### Explanation
 
 This query retrieves all records from the Students table.
