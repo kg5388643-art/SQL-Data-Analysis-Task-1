@@ -30,10 +30,6 @@ CREATE TABLE Students (
 ```sql
 SELECT * FROM Students;
 ```
-### Result
-
-Screenshot: Select all queries.png
-
 ### Explanation
 
 This query retrieves all records from the Students table.
@@ -50,10 +46,6 @@ AVG(ScienceScore) AS Avg_Science,
 AVG(EnglishScore) AS Avg_English
 FROM Students;
 ```
-
-### Result
-
-Screenshot:avgscore.png
 
 ### Explanation
 
@@ -73,9 +65,6 @@ ORDER BY TotalScore DESC
 LIMIT 1;
 ```
 
-### Result
-
-Screenshot: top performer.png
 
 ### Explanation
 
@@ -93,9 +82,7 @@ FROM Students
 GROUP BY Grade;
 ```
 
-### Result
 
-Screenshot: grade.png
 
 ### Explanation
 
@@ -116,9 +103,6 @@ FROM Students
 GROUP BY Gender;
 ```
 
-### Result
-
-Screenshot: genderavg.png
 
 ### Explanation
 
@@ -136,9 +120,7 @@ FROM Students
 WHERE MathScore > 80;
 ```
 
-### Result
 
-Screenshot: mathabove80.png
 
 ### Explanation
 
@@ -164,9 +146,6 @@ FROM Students
 WHERE StudentID = 3;
 ```
 
-### Result
-
-Screenshot: update.png
 
 ### Explanation
 
